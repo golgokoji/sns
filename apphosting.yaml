@@ -1,18 +1,2 @@
-# Firebase App Hosting Configuration
-# This file tells App Hosting how to handle environment variables and runtime settings.
-
-runConfig:
-  # Next.js may need memory depending on SSG/SSR operations. 1GB is a safe default.
-  memorySize: "1GiB"
-  cpu: 1
-  concurrency: 80
-
-env:
-  # Instruct Firebase App Hosting to map these environment variables from Cloud Secret Manager or App Hosting settings.
-  # These will be available during both BUILD and RUNTIME.
-  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+kind: "AppHostingConfig"
+schemaVersion: "v1beta"
